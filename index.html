@@ -1,11 +1,570 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
+
   <head>
     <meta charset="UTF-8">
-    <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NforS</title>
+    <meta name="description" content="○○○○○○○○">
+    <meta name="keywords" content="○○○○○○○○○">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="NforS">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="○○○○○○○">
+    <meta property="og:image" content="img/icon.png">
+    <meta property="og:description" content="○○○○○○○○">
+    <meta property="og:site-name" content="Nfors">
+    <link rel="icon" href="img/icon.png">
+    <link rel="apple-touch-icon" sizes="180×180" href="icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
   </head>
+
   <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
+    <div id="wrap">
+      <header class="header">
+        <div class="main-menu">
+          <div class="header-icon">
+            <a href="index.html"><img src="img/NforS.png" alt="" class="icon"></a>
+          </div>
+          <div class="nav-wrapper">
+            <nav class="header-nav">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="#bussiness">事業内容</a></li>
+                <li class="nav-item"><a href="#corporation">会社情報</a></li>
+                <li class="nav-item"><a href="#news">News</a></li>
+                <li>
+                  <div class="nav-item contact"><a href="#contact">お問い合わせ</a></div>
+                </li>  
+              </ul>
+            </nav>
+          </div>
+          <div class="burger-btn" onclick="event.stopPropagation(); menu(this);">
+            <span class="bars">
+              <span class="bar bar-top"></span>
+              <span class="bar bar-mid"></span>
+              <span class="bar bar-bottom"></span>
+            </span>
+          </div>
+        </div>
+        <div id="menu">
+          <div>
+            <a href="#bussiness">事業内容</a>
+          </div>
+          <div>
+            <a href="#corporation">会社情報</a>
+          </div>
+          <div>
+            <a href="#news">News</a>
+          </div>
+          <div>
+            <div class="nav-item contact"><a href="#contact">お問い合わせ</a></div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="top" class="section-top">
+          <div class="top-img">
+            <img src="img/topimage.jpg" alt="">
+          </div>
+        </section>
+        <section id="bussiness" class="section-bussiness">
+          <div class="wrapper">
+            <div class="section-title">
+              <span>事業内容</span>
+            </div>
+            <div class="back-img">
+              <div class="circle-medium first-circle-medidum" data-aos="fade-right">
+              </div>
+              <div class="circle-small first-circle-small" data-aos="fade-right">
+              </div>
+              <div class="circle-title first-circle-title" data-aos="fade-right">
+                動画制作事業
+              </div>
+              <img class="img-bg" src="img/bg-img1.png" data-aos="fade-left" data-aos-duration="3000" alt="" >
+            </div>
+            <div class="box-text">
+              <!-- <div class="box-text-content"> -->
+                高品質、短納期、安価の3つがポイントの動画制作サービスです。<br>
+                ベンチャー企業から東証一部上場企業まで、業種/業界問わず幅広く ご依頼およびリピートいただいております。<br>
+                また、動画制作のみならず、高いマーケティング観点での話し合い、 動画PDCAを回していくお取り組みも可能でございます。<br>
+                高い品質を維持するため、ご依頼数に限りがございますので、まずはお気軽にご相談くださいませ。
+              <!-- </div> -->
+            </div>
+            <div class="button_wrap">
+              <a class="button" href="https://castingplus.jp">
+                <img src="img/arrow.png" alt="" class="icon-arrow">
+                <div>キャスティングプラス<span class="small-text">をみる</span></div>
+                <!-- <img src="img/casting.png" alt="" class="icon"> -->
+                <!-- casting plus -->
+              </a>
+            </div>
+            <div class="box-text-slash">
+              <div class="content-title">
+                <span>動画ジャンル</span>
+              </div>
+              <div class="box-content">
+                <div class="rectangle-box" data-aos="fade-up-right">
+                  <img src="img/rect-icon1.png" alt="">
+                  アニメーション動画
+                </div>
+                <div class="rectangle-box" data-aos="fade-up-left">
+                  <img src="img/rect-icon2.png" alt="">
+                  イラスト動画
+                </div>
+                <div class="rectangle-box" data-aos="fade-up-right">
+                  <img src="img/rect-icon3.png" alt="">
+                  実写動画
+                </div>
+                <div class="rectangle-box" data-aos="fade-up-left">
+                  <img src="img/rect-icon4.png" alt="">
+                </div>
+              </div>
+              <div class="content-title">
+                <span>出稿可能媒体</span>
+              </div>
+              <div class="box-content">
+                <div class="round-box" data-aos="fade-up-right">
+                  <img class="icon-small" src="img/round-icon1.png" alt="">
+                  TV
+                </div>
+                <div class="round-box" data-aos="fade-up-left">
+                  <img class="icon-small" src="img/round-icon2.png" alt="">
+                  Web
+                </div>
+                <div class="round-box" data-aos="fade-up-right">
+                  <img class="icon-small" src="img/round-icon3.png" alt="">
+                  YouTobu<br>
+                  Facebook<br>
+                  Instogram<br>
+                  Twitter
+                </div>
+                <div class="round-box" data-aos="fade-up-left">
+                  <img class="icon-small" src="img/round-icon4.png" alt="">
+                  CU <br>
+                  (TVer,FODなど)
+                </div>
+                <div class="round-box" data-aos="fade-up-right">
+                  <img class="icon-small" src="img/round-icon5.png" alt="">
+                  サイネージ
+                </div>
+              </div>                  
+            </div>
+            <div class="back-img">
+              <div class="circle-medium" data-aos="fade-right">
+              </div>
+              <div class="circle-small" data-aos="fade-right">
+              </div>
+              <div class="circle-title" data-aos="fade-right">
+                キャスティング事業
+              </div>
+              <img class="img-bg" src="img/bg-img2.png" data-aos="fade-left" alt="" data-aos-duration="3000">
+            </div>
+            <div class="box-text">
+              「有名人」の「声」に特化したキャスティングサービス「キャスティング プラス（キャスプラ）」の運営
+            </div>
+            <div class="box-text-slash content-use">
+              <div class="content-title">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;用途&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              </div>
+              <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="round-box" data-aos="fade-up">
+                  <img class="icon-small" src="img/round-icon6.png" alt="">
+                  PR動画
+                </div>
+                <p>
+                  商品•サービス紹介動画のナレーションで注目度&印象を アップさせます。<br>
+                  撮影を伴わない「声だけ」の出演なら費用を抑えて制作可 能です。<br>
+                  また、動画内や広告文などにタレント名を掲載する ことも可能です。
+                </p>
+              </div>
+              <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="round-box" data-aos="fade-up">
+                  <img class="icon-small" src="img/round-icon7.png" alt="">
+                  リテンション施策
+                </div>
+                <p>
+                  有名人からのメッセージで社員のモチベーション向上させ ます。<br>
+                  毎月1回、活躍した社員などに向けてのお祝いメッセー ジを俳優やお笑い芸人が担当します。<br>
+                  また、直筆サインプレゼントなど企画性を持たせた内容もご 相談可能です。<br>
+                  *リテンション施策:優秀な人材の確保や定着を目的とした 施策です。
+                </p>
+              </div>
+              <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="round-box" data-aos="fade-up">
+                  <img class="icon-small" src="img/round-icon8.png" alt="">
+                  イペント
+                </div>
+                <p>
+                  忘年会、周年イベントなどのサプライズコンテンツを一緒に 作ります。有名人からのお祝いコメントを流すことで場が盛 り上がること間違いなし!<br>
+                  •ビデオメッセージ<br>
+                  •サイン色紙<br>
+                  など<br>
+                  事務所や本人の意向により難しい場合もございます。<br>
+                  まずはお気軽にご相談くださいませ。
+                </p>
+              </div>
+              <div class="content-title">
+                <span>キャスティング例</span>
+              </div>
+              <div class="casting-content">
+                <div class="casting-box">
+                  <img class="bullet" src="img/casting-1.png"> タレント
+                </div>  
+                <div class="casting-box">
+                  <img class="bullet" src="img/casting-2.png"> 俳&nbsp;&nbsp;&nbsp;&nbsp;優
+                </div>  
+                <div class="casting-box">
+                  <img class="bullet" src="img/casting-3.png"> 女&nbsp;&nbsp;&nbsp;&nbsp;優
+                </div>  
+                <div class="casting-box">
+                  <img class="bullet" src="img/casting-4.png"> お笑い芸人
+                </div>  
+                <div class="casting-box">
+                  <img class="bullet" src="img/casting-5.png"> ミュージシャン
+                </div>  
+                <div class="casting-box">
+                  <img class="bullet" src="img/casting-6.png"> 声&nbsp;&nbsp;&nbsp;&nbsp;優
+                </div>  
+              </div>
+            </div>
+            <div class="back-img">
+              <div class="circle-medium" data-aos="fade-right">
+              </div>
+              <div class="circle-small" data-aos="fade-right">
+              </div>
+              <div class="circle-title" data-aos="fade-right">
+                コスメ事業
+              </div>
+              <img class="img-bg" src="img/bg-img4.png" data-aos="fade-left" alt="" data-aos-duration="3000">
+            </div>
+            <div class="box-text">
+              品質と香りを追求するコスメブランド「KAN」の商品開発•販売
+            </div>
+            <div class="content-use">
+              <ul>
+                <li>
+                  <img class="bullet" src="img/bullet.png">品質、香りへのこだわり
+                </li>
+                <p>お客様から真に良いと感じていただける商品を開発するため、幾度も消費者テストを 行い、80%以上の高評価を得たものだけを商品化いたします。
+                </p>
+                <br>
+                <li>
+                  <img class="bullet" src="img/bullet.png">消費者テスト
+                </li>
+                <p>
+                  20代〜60代までの消費者の方に、香り、使い勝手、容量について10段階の総合評価 と、その評価の理由を調査いたします。<br>
+                  消費者テストで80%を超えたものだけが合格となり、商品化へ進みます。
+                </p>
+              </ul>
+            </div>
+            <div class="back-img">
+              <div class="circle-medium" data-aos="fade-right">
+              </div>
+              <div class="circle-small" data-aos="fade-right">
+              </div>
+              <div class="circle-title" data-aos="fade-right">
+                メディア事業
+              </div>
+              <img class="img-bg" src="img/bg-img5.png" data-aos="fade-left" alt="" data-aos-duration="3000">
+            </div>
+            <div class="box-text">
+              アンチエイジング情報を提供する「@美魔女」の運営
+            </div>
+            <div class="button_wrap">
+              <a class="button" href="https://castingplus.jp">
+                <img src="img/arrow.png" alt="" class="icon-arrow">
+                <div>@美魔女<span class="small-text">をみる</span></div>
+              </a>
+            </div>
+            <div class="content-use">
+              <ul>
+                <li>
+                  <img class="bullet" src="img/bullet.png">コンセプト
+                </li>
+                <p>“なりたいワタシ”をテーマに、30代以上の女性に向けた、アンチエイジングに特化した 情報を提供いたします。
+                </p>
+                <br>
+                <li>
+                  <img class="bullet" src="img/bullet.png">ジャンル
+                </li>
+                <p>
+                  美容
+                </p>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="corporation" class="section-corporation">
+          <div class="section-title">
+            <span>会社情報</span>
+          </div>
+          <div class="blue-textbox-right">
+            <div class="blue-textbox-content" data-aos="fade-left">
+              <h1>
+                VISION（実現したい未来）<br>「人を笑顔に、社会を豊かに、世界を幸せに」
+              </h1>
+              私たちは、ヒト、モノ、コト、情報を通じて人々に笑顔をもたらします。<br>
+              私たちは、社会の一員であることを認識し、事業活動を通じて社会を より豊かにするために貢献します。<br>
+              私たちは、今日より明日の世界が1%でも幸せになることを願い挑戦し続けます。
+            </div>
+            <div class="circle-large" data-aos="fade-right">
+            </div>
+            <div class="circle-linear" data-aos="fade-right">
+            </div>
+            <div class="circle-large-title" data-aos="fade-right">
+              VISION
+            </div>
+          </div>
+          <div class="blue-textbox-left">
+            <div class="blue-textbox-content" data-aos="fade-right">
+              <h1>
+                MISSION（日々果たすべき使命）<br>「ニーズに目を向け、常識を疑い、市場を作る」
+              </h1>
+              お客様のニーズは時代や環境などにより刻々と変化します。<br>
+              私たちはベンチャー精神をもってそれらの変化に柔軟に対応し、 お客様が求めているもの、課題に感じていることを徹底的に考え抜き ます。その過程の中で、当たり前とされている常識を必ず疑います。<br>
+              例えば、我々が提供している動画制作においては、動画は高額、修正 の手間もかかり、納期も長いとされてきました。しかし、独自のスキー ムを作ることによって、 オリジナル動画を安価•柔軟•早い制作を実 現し、多くのお客様にお喜び頂いております。<br><br>
+              ”新しい当たり前をつくる”ことが私たちの使命です。
+            </div>
+            <div class="circle-large right" data-aos="fade-left">
+            </div>
+            <div class="circle-linear right" data-aos="fade-left">
+            </div>
+            <div class="circle-large-title right" data-aos="fade-left">
+              MISSION
+            </div>
+          </div>
+          <div class="blue-textbox-right">
+            <div class="blue-textbox-content" data-aos="fade-left">
+              <h1>
+                VALUE（約束する価値•強み）<br>「多様性・誠実•信頼」
+              </h1>
+                •性別、国籍、人種、年齢、価値観、障害など様々な違いを問わず<br>
+                多様な人材を認め、個性、強みを発揮して社会へ貢献できる仕組みづくりを 行います。<br>
+                •誠実な対応、誠実な商品•サービス開発によってお客様へ最大限の価値を提供いたします。<br>
+                •お客様をはじめとするステークホルダーと強固な信頼関係を築き、<br>
+                社会から必要とされる存在であり続けます。
+            </div>
+            <div class="circle-large" data-aos="fade-right">
+            </div>
+            <div class="circle-linear" data-aos="fade-right">
+            </div>
+            <div class="circle-large-title" data-aos="fade-right">
+              VALUE
+            </div>
+          </div>
+          <div class="blue-textbox-left">
+            <div class="blue-textbox-content president-message-box" data-aos="fade-right">
+              <div class="president-photo">
+                <img src="img/photo.png" alt="">
+              </div>
+              <div>
+                平素は格別のお引き立てを賜り、 誠にありがとうございます。<br>
+                私たちは2016年6月15日、渋谷の雑居ビルで産声をあげました。<br>
+                設立時のメンバーは皆が大学生だったこともあり、身近な課題に目 を向け「学食の電子化」事業から始まりました。<br>
+                その後、資本力のあるオンラインデリバリーサービスの参入に伴い 事業をピポットし、まだ市場規模が1,000億円未満だった「動画制作」 の領域で”価格””クオリティ””制作スピード・・を兼ね備えたサービ スを提供し始めました。<br>
+                今日に至るまで、ベンチャー企業様から東証一部上場企業様まで多 くのお客様からご愛顧いただき、心より感謝申し上げます。<br>
+                私たちは今後10年、50年、100年と変わりゆくお客様ニーズに目 を向け、課題を解決し「笑顔」をもたらす独自性の高い商品・サー ビスを生み出し続けます。<br>
+                そして、日本のみならず世界に市場を作って参ります。<br>
+                これからもエヌフォースをどうぞよろしくお願い申し上げます。<br>
+              </div>
+            </div>
+            <div class="circle-large right light-blue" data-aos="fade-left">
+            </div>
+            <div class="circle-linear right blue rotate-y" data-aos="fade-left">
+            </div>
+            <div class="circle-large-title right president-title" data-aos="fade-left">
+              代表挨拶
+            </div>
+          </div>
+          <div class="corperation-discuss">
+            <div class="wrapper">
+              <table class="kaisha">
+                <tr>
+                  <th>会社名</th>
+                  <td>株式会社エヌフォース</td>
+                </tr>
+                <tr>
+                  <th>設立</th>
+                  <td>2016年6月15日</td>
+                </tr>
+                <tr>
+                  <th>代表取締役</th>
+                  <td>守田　勧</td>
+                </tr>
+                <tr>
+                  <th>所在地</th>
+                  <td>〒141-0031<br>東京都品川区五反田7-21-11第2TOCビル6F</td>
+                </tr>
+                <tr>
+                  <th>事業内容</th>
+                  <td>デジタルコンテンツの企画、立案、制作<br>広告代理業</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="corperation-map">
+            <div class="left-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.5436798586543!2d133.3570253155291!3d34.53978739932631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDMyJzIzLjIiTiAxMzPCsDIxJzMzLjIiRQ!5e0!3m2!1sja!2sru!4v1624453462453!5m2!1sja!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="right-access"><br>
+              <h1>アクセス</h1>
+              <p>VJR、都営地下鉄〉:五反田駅より徒歩10分<br>
+                ＜東急池上線〉:大崎広小路駅より徒歩9分
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="news" class="section-news">
+          <div class="wrapper">
+            <div class="section-title">
+              <span>NEWS</span>
+            </div>
+            <div class="box-content" data-aos="flip-up">
+              <ul>
+                <li>
+                  <img class="bullet" src="img/bullet_news.png">新型コロナウイルス感染拡大に対する当社対応について
+                </li>
+                <br>
+                <li>
+                  <img class="bullet" src="img/bullet_news.png">テキストが入りますテキストが入りますテキストが入ります
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="section-contact" class="section-contact">
+          <div class="section-title">
+            <span>お問い合わせ</span>
+          </div>
+          <div class="contact-table">
+            <div class="wrapper">
+              <div class="row">
+                <div class="col-md-4 mt-1 col-label">
+                  <label for="Your name">お名前</label>
+                  <div class="label-required">必須</div>
+                </div>
+                <div class="col-md-8 mt-1">
+                  <input id="Your name" type="text" name="name" class="textarea" required>  
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 mt-1 col-label">
+                  <label for="Your name">お名前</label>
+                  <div class="label-required">必須</div>
+                </div>
+                <div class="col-md-8 mt-1">
+                  <input id="Your name" type="text" name="name" class="textarea" required>  
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 mt-1 col-label">
+                  <label for="Your name">お名前</label>
+                  <div class="label-required">必須</div>
+                </div>
+                <div class="col-md-8 mt-1">
+                  <input id="Your name" type="text" name="name" class="textarea" required>  
+                </div>
+              </div>
+
+              <!-- <table class="tbl-contact">
+                <tr>
+                  <th><label for="Your name">お名前</label>
+                    <div class="required1"></div>
+                  </th>
+                  <td><input id="Your name" type="text" name="name" class="textarea" required></td>
+                </tr>
+                <tr>
+                  <th><label for="furigana">フリガナ</label></th>
+                  <td><input id="furigana" type="text" name="furigana" class="textarea" required></td>
+                </tr>
+                <tr>
+                  <th><label for="Company name">会社名</label>
+                    <div class="required1"></div>
+                  </th>
+                  <td><input id="Company name" type="text" name="company name" class="textarea" required></td>
+                </tr>
+                <tr>
+                  <th><label for="Company yakushoku">部署名.役職名</label>
+                    <div class="required1"></div>
+                  </th>
+                  <td><input id="Company yakushoku" type="text" name="company yakushoku" class="textarea"></td>
+                </tr>
+                <tr>
+                  <th><label for="Email atdress">メールアドレス</label>
+                    <div class="required1"></div>
+                  </th>
+                  <td><input id="Email atdress" type="text" name="email atdress" class="textarea" required></td>
+                </tr>
+                <tr>
+                  <th><label for="Phone number">電話番号</label>
+                    <div class="required1"></div>
+                  </th>
+                  <td><input id="Phone number" type="text" name="phone number" class="textarea" required></td>
+                </tr>
+                <tr>
+                  <th><label for="url">URL</label></th>
+                  <td><input id="url" type="text" name="url" class="textarea"></td>
+                </tr>
+                <tr>
+                  <th><label for="nouki">タイトル</label></th>
+                  <td><input id="nouki" type="text" name="nouki" class="textarea"></td>
+                </tr>
+                <tr>
+                  <th><label for="Inquiry Details">メツセジ</label>
+                    <div class="required1"></div>
+                  </th>
+                  <td><textarea id="Inquiry Details" name="inquiry details" rows="5" required></textarea>
+                  </td>
+                </tr>
+              </table> -->
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <div class="content-footer">
+          <div>
+            <img src="img/NforS.png" alt="" class="icon">
+            <ul>
+              <li><a href="#service">事業内容</a></li>
+              <li><a href="#riyuu">会社情報</a></li>
+              <li><a href="#ryoukin">News</a></li>
+              <li>
+                <div class="nav-item contact"><a href="#contact">お問い合わせ</a></div>
+              </li>  
+            </ul>
+          </div>
+        </div>
+        <p>&copy; 2021 NforS Inc</p>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+      </script>
+    </div>
+    <!-- JavaScript読み込み -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="scripts/aos.js"></script>  
+    
+    <script src="scripts/file.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
